@@ -7,6 +7,20 @@ public class VectorHelper
   /**
    * Trie le vecteur donné en utilisant le trie par insertion.
    * @param vect Le vecteur à trier.
+   * 
+   * <pre>
+   * <b>Example</b>
+   * {@code 
+   * int[] vect = {9, 8, 2, 3, 4, 1}
+   * 
+   * VectorHelper.trierVecteur(vect);
+   * for(int n : vect)
+   *    System.out.print(n + " ");
+   * }
+   * 
+   * <b>Result:</b>
+   * 1 2 3 4 8 9
+   * </pre>
    */
   public static void trierVecteur(int[] vect)
   {
@@ -33,6 +47,23 @@ public class VectorHelper
    * @param vect2 Deuxième vecteur.
    * @return Le vecteur dont le contenu de la case i est vect1[i] + vect2[i].
    * @exception IllegalArgumentException dans le cas où les vecteurs n'ont pas la même taille.
+   * 
+   * <pre>
+   * <b>Example</b>
+   * {@code 
+   * int[] vect1 = {1, 2, 3},
+   *       vect2 = {2, 3, 4};
+   * 
+   * int[] res = VectorHelper.sommerVecteurs(vect1, vect2);
+   * 
+   * for(int n : res)
+   *    System.out.println(n + " ");
+   * }
+   * 
+   * <b>Result</b>
+   * 
+   * 3 5 7
+   * </pre>
    */
   public static int[] sommerVecteurs(int[] vect1, int[] vect2)
   {
