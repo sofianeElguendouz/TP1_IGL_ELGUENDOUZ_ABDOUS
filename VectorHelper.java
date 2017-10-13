@@ -5,6 +5,29 @@
 public class VectorHelper 
 {
   /**
+   * Trie le vecteur donné en utilisant le trie par insertion.
+   * @param vect Le vecteur à trier.
+   */
+  public static void trierVecteur(int[] vect)
+  {
+    int cle, j;
+    
+    for(int i = 1; i < vect.length; ++i)
+    {
+      cle = vect[i];
+      
+      j = i - 1;
+      while(j >= 0 && vect[j] > cle)
+      {
+        vect[j + 1] = vect[j];
+        --j;
+      }
+      
+      vect[j + 1] = cle;
+    }
+  }
+  
+  /**
    * Calcule la somme de deux vecteurs. Les deux vecteurs doivent avoir la même taille.
    * @param vect1 Premier vecteur.
    * @param vect2 Deuxième vecteur.
