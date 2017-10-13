@@ -1,2 +1,3 @@
 # TP1_IGL_ELGUENDOUZ_ABDOUS
-TP1_IGL_1CS
+
+Réalisation de l'application N°2.
